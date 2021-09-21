@@ -656,6 +656,7 @@ header{
         }
         @media (min-width: 1200px) {
             width: 35vw;
+            justify-content: center;
         }
         &#html{
             .contenant{
@@ -774,7 +775,10 @@ header{
             width: 70%;
             border-radius: 10px;
             overflow: hidden;
-            margin-left: 10vw;
+            margin-left: 5vw;
+            @media (min-width: 1200px) {
+                margin-left: 2vw;
+            }
             .contenu{
                 height: 100%;
                 display : flex;

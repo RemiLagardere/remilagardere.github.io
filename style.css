@@ -981,6 +981,9 @@ header .nav-list ul {
 @media (min-width: 1200px) {
   .jauges_section .jauge {
     width: 35vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1109,7 +1112,13 @@ header .nav-list ul {
   width: 70%;
   border-radius: 10px;
   overflow: hidden;
-  margin-left: 10vw;
+  margin-left: 5vw;
+}
+
+@media (min-width: 1200px) {
+  .jauges_section .jauge .contenant {
+    margin-left: 2vw;
+  }
 }
 
 .jauges_section .jauge .contenant .contenu {
