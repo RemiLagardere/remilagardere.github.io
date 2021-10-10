@@ -1380,6 +1380,17 @@ header .nav-list ul {
           transform: scale(1.05);
 }
 
+.projets_section .projet .blur_background#todolist {
+  background-image: url("img/Todolist/todo.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+.projets_section .projet .blur_background#todolist.zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .projets_section .projet .description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1739,6 +1750,11 @@ header .nav-list ul {
 .lightbox#site6_lightbox a {
   color: #45abbd;
   text-decoration: underline;
+}
+
+.lightbox#site7_lightbox img {
+  height: 280px;
+  max-height: 600px;
 }
 
 .contacts {
