@@ -813,13 +813,12 @@ header .nav-list ul {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 @media (min-width: 768px) {
   .timeline_section .timeline ol ul .poste {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
 }
@@ -830,7 +829,7 @@ header .nav-list ul {
   font-weight: 400;
   font-size: 0.85rem;
   font-style: italic;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   position: relative;
 }
 
@@ -1060,7 +1059,7 @@ header .nav-list ul {
 }
 
 .jauges_section .jauge#photoshop .contenu {
-  width: 87%;
+  width: 92%;
   background-color: #03A9F4;
 }
 
@@ -1069,7 +1068,7 @@ header .nav-list ul {
 }
 
 .jauges_section .jauge#illustrator .contenu {
-  width: 95%;
+  width: 91%;
   background-color: #F05120;
 }
 
@@ -1078,7 +1077,7 @@ header .nav-list ul {
 }
 
 .jauges_section .jauge#premiere .contenu {
-  width: 92%;
+  width: 88%;
   background-color: #E040FB;
 }
 
@@ -1089,24 +1088,6 @@ header .nav-list ul {
 .jauges_section .jauge#after .contenu {
   width: 85%;
   background-color: #AB82F5;
-}
-
-.jauges_section .jauge#fcp .contenant {
-  background-color: #8bff957e;
-}
-
-.jauges_section .jauge#fcp .contenu {
-  width: 75%;
-  background-color: #36f7467e;
-}
-
-.jauges_section .jauge#dvr .contenant {
-  background-color: #fff8907e;
-}
-
-.jauges_section .jauge#dvr .contenu {
-  width: 70%;
-  background-color: #fffb0fda;
 }
 
 .jauges_section .jauge .logo {
@@ -1410,28 +1391,6 @@ header .nav-list ul {
           transform: scale(1.05);
 }
 
-.projets_section .projet .blur_background#voeux {
-  background-image: url("img/voeux/voeux.PNG");
-  background-size: cover;
-  background-position: center;
-}
-
-.projets_section .projet .blur_background#voeux.zoom {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.projets_section .projet .blur_background#passerelles {
-  background-image: url("img/passerelles/Passerelles.PNG");
-  background-size: cover;
-  background-position: center;
-}
-
-.projets_section .projet .blur_background#passerelles.zoom {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .projets_section .projet .description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1660,7 +1619,7 @@ header .nav-list ul {
   .lightbox.active .lightbox_content .images img {
     width: 75vw;
     max-width: 600px;
-    height: 25vh;
+    height: 35vh;
     max-height: 350px;
   }
 }

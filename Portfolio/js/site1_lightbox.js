@@ -119,40 +119,6 @@ exit_7.addEventListener('click', e => {
     document.body.style.overflow = 'scroll'
 })
 
-//lightbox 8
-
-var lightbox_link_8 = document.getElementById('site8_link');
-var lightbox_8 = document.getElementById('site8_lightbox');
-var exit_8 = document.getElementById('exit_8');
-
-lightbox_link_8.addEventListener('click', e => {
-        lightbox_8.classList.add('active');
-        document.body.style.overflow = 'hidden'
-
-})
-
-exit_8.addEventListener('click', e => {
-    lightbox_8.classList.remove('active');
-    document.body.style.overflow = 'scroll'
-})
-
-//lightbox 9
-
-var lightbox_link_9 = document.getElementById('site9_link');
-var lightbox_9 = document.getElementById('site9_lightbox');
-var exit_9 = document.getElementById('exit_9');
-
-lightbox_link_9.addEventListener('click', e => {
-        lightbox_9.classList.add('active');
-        document.body.style.overflow = 'hidden'
-
-})
-
-exit_9.addEventListener('click', e => {
-    lightbox_9.classList.remove('active');
-    document.body.style.overflow = 'scroll'
-})
-
 
 
 
