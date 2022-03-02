@@ -12,6 +12,7 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -313,7 +314,7 @@ header .nav-list ul {
   background-size: cover;
   background-position: top center;
   position: relative;
-  z-index: -2;
+  z-index: 90;
 }
 
 @media (min-width: 768px) {
@@ -427,6 +428,31 @@ header .nav-list ul {
     font-size: 0.6em;
     font-weight: 200;
     margin-top: 3vh;
+  }
+}
+
+.accueil .section-title .cv {
+  color: #45abbd;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5vh;
+  z-index: 500;
+}
+
+.accueil .section-title .cv a {
+  color: #45abbd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.accueil .section-title .cv:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .accueil .section-title .cv {
+    font-size: 1.5rem;
   }
 }
 
@@ -1819,7 +1845,7 @@ header .nav-list ul {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  padding-bottom: 25vh;
+  padding-bottom: 7vh;
 }
 
 .contacts .section-title {
@@ -1849,7 +1875,7 @@ header .nav-list ul {
 }
 
 .contacts .section-title h1 span {
-  color: #45abbd;
+  color: #46acbe;
   font-weight: 400;
 }
 
@@ -1860,140 +1886,139 @@ header .nav-list ul {
   }
 }
 
-.contacts .logos {
+.contacts .coordonnées {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  margin-top: 5vh;
 }
 
-.contacts .logos img {
-  height: 0px;
-  width: 0px;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.contacts .logos img.zoom {
-  opacity: 1;
-  height: 200px;
-  width: 200px;
-}
-
-@media (min-width: 768px) {
-  .contacts .logos img.zoom {
-    height: 250px;
-    width: 250px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contacts .logos img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-.contacts .logos .phone {
-  margin-left: 15vw;
-  cursor: pointer;
-}
-
-.contacts .logos .mail {
+.contacts .coordonnées .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 15vw;
-  cursor: pointer;
-}
-
-.contacts .logos .linkedin {
-  margin-left: 15vw;
-}
-
-.contacts .logos .github {
-  margin-right: 15vw;
-}
-
-.contacts .logos .texte {
-  display: none;
-  -webkit-transition: 1s;
-  transition: 1s;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 5vh;
 }
 
 @media (min-width: 768px) {
-  .contacts .logos .texte {
-    font-size: 2rem;
-    font-weight: 200;
+  .contacts .coordonnées .email {
+    font-size: 1.5rem;
+  }
+  .contacts .coordonnées .email img {
+    height: 200px;
+    width: 200px;
   }
 }
 
-.contacts .logos #mail {
-  margin-left: 40px;
-}
-
 @media (min-width: 1200px) {
-  .contacts .logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .contacts .coordonnées .email {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .contacts .logos .phone {
-    margin-left: 0;
-    position: relative;
+  .contacts .coordonnées .email .texte {
+    margin-left: 2vw;
   }
-  .contacts .logos .phone .texte {
-    position: absolute;
+}
+
+.contacts .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts .logos img {
+  height: 150px;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .contacts .logos img {
+    height: 200px;
+    width: 200px;
   }
-  .contacts .logos .mail {
-    margin-right: 0;
+}
+
+.Goup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #07010f;
+  padding-bottom: 5vh;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .Goup {
+    font-size: 1.5rem;
   }
-  .contacts .logos .mail .texte {
-    position: absolute;
-    margin-top: 300px;
-  }
-  .contacts .logos .linkedin {
-    margin-left: 0;
-  }
-  .contacts .logos .github {
-    margin-right: 0;
-  }
+}
+
+.Goup .cv {
+  color: #45abbd;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  z-index: 500;
+  margin-bottom: 10vh;
+  z-index: 5;
+}
+
+.Goup .cv a {
+  color: #45abbd;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Goup .cv:hover {
+  text-decoration: underline;
+}
+
+.Goup svg {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 2vh;
 }
 
 footer {
@@ -2007,13 +2032,19 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 1200px) {
   footer {
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  footer {
+    font-size: 2.5rem;
   }
 }
 

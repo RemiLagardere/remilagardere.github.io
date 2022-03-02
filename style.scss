@@ -13,6 +13,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -225,7 +226,7 @@ header{
     background-size: cover;
     background-position: top center;
     position: relative;
-    z-index: -2;
+    z-index : 90;
     @media (min-width: 768px) {
         background-size: cover;
         background-position: top ;
@@ -277,7 +278,7 @@ header{
         span{
             font-size: 1.8rem;
             font-weight: 500;
-            color : rgb(69, 171, 189);
+            color : #45abbd;
             @media (min-width: 768px) {
                 font-size: 1em;
                 font-weight: 500;
@@ -302,6 +303,27 @@ header{
                 font-weight: 200;
                 margin-top: 3vh;
             }
+        }
+        .cv{
+            color : #45abbd;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 5vh;
+            z-index : 500;
+            a{
+                color : #45abbd;
+                cursor: pointer;
+                text-decoration: none;
+                
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+            @media (min-width: 768px) {
+                font-size: 1.5rem;
+            }
+            
         }
 
     }
@@ -638,7 +660,7 @@ header{
                 animation: slide_up 0.5s ease-in-out;
             }
             span{
-                color : rgb(69, 171, 189);
+                color : #45abbd;
                 font-weight: 400;
                 @media (min-width: 768px) {
                     font-size: 2.5rem;
@@ -1263,7 +1285,7 @@ header{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    padding-bottom: 25vh;
+    padding-bottom: 7vh;
     .section-title{
         width: 80%;
         color : white;
@@ -1282,7 +1304,7 @@ header{
                 animation: slide_up 0.5s ease-in-out;
             }
             span{
-                color : rgb(69, 171, 189);
+                color : #46acbe;
                 font-weight: 400;
                 @media (min-width: 768px) {
                     font-size: 2.5rem;
@@ -1291,96 +1313,90 @@ header{
             }
         }
     }
-    .logos{
+    .coordonnées{
         display : flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
-        width: 100%;
-        margin-top: 5vh;
-        img{
-            height : 0px;
-            width : 0px;
-            opacity: 0;
-            transition: 0.3s;
-            &.zoom{
-                opacity: 1;
-                height : 200px;
-                width : 200px;
-                @media (min-width: 768px) {
-                        height : 250px;
-                        width : 250px;
+        .email{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color : white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 5vh;
+            @media (min-width: 768px) {
+                font-size: 1.5rem;
+                img{
+                    height : 200px;
+                    width : 200px;
                 }
             }
             @media (min-width: 1200px) {
-                &:hover{
-                    transform: scale(1.1);
-                }
-            }
-        }
-        .phone{
-            margin-left: 15vw;
-            cursor: pointer;
-        }
-        .mail{
-            display : flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
-            margin-right: 15vw;
-            cursor: pointer;
-        }
-        .linkedin{
-            margin-left: 15vw;
-        }
-        .github{
-            margin-right: 15vw;
-        }
-        .texte{
-            display: none;
-            transition: 1s;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 100;
-            font-size: 1.2rem;
-            @media (min-width: 768px) {
-                font-size: 2rem;
-                font-weight: 200;
-            }
-        }
-        #mail{
-            margin-left: 40px;
-        }
-        @media (min-width: 1200px) {
-            display : flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            .phone{
-                margin-left: 0;
-                position: relative;
+                flex-direction: row;
                 .texte{
-                    position: absolute;
+                    margin-left: 2vw;
                 }
             }
-            .mail{
-                margin-right: 0;
-                .texte{
-                    position: absolute;
-                    margin-top: 300px;
-                }
-            }
-            .linkedin{
-                margin-left: 0;
-            }
-            .github{
-                margin-right: 0;
-            }
-
         }
-
+    }
+    .logos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height : 150px;
+            width : 150px;
+        }
+        @media (min-width: 768px) {
+            img{
+                height : 200px;
+                width : 200px;
+            }
+        }
     }
 
+}
+
+.Goup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(7, 1, 15);
+    padding-bottom: 5vh;
+    color : white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+    .cv{
+        color : #45abbd;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        z-index : 500;
+        margin-bottom: 10vh;
+        z-index: 5;
+        a{
+            color : #45abbd;
+            cursor: pointer;
+            text-decoration: none;
+            
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        
+    }
+    svg{
+        height : 70px;
+        width: 70px;
+        margin-bottom: 2vh;
+    }
 }
 
 
@@ -1392,10 +1408,13 @@ footer{
     padding-bottom: 2vh;
     color: white;
     @media (min-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     @media (min-width: 1200px) {
         font-size: 1.2rem;
+    }
+    @media (min-width: 1900px) {
+        font-size: 2.5rem;
     }
 }
 
