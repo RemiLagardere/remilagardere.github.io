@@ -1031,6 +1031,14 @@ header{
                     transform: scale(1.05);
                 }
             }
+            &#ptp{
+                background-image: url("img/PTP/PTP.png");
+                background-size: cover;
+                background-position: center;
+                &.zoom{
+                    transform: scale(1.05);
+                }
+            }
 
         }
         .description{

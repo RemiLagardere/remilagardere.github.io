@@ -204,4 +204,21 @@ exit_12.addEventListener('click', e => {
     document.body.style.overflow = 'scroll'
 })
 
+//lightbox 13
+
+var lightbox_link_13 = document.getElementById('site13_link');
+var lightbox_13 = document.getElementById('site13_lightbox');
+var exit_13 = document.getElementById('exit_13');
+
+lightbox_link_13.addEventListener('click', e => {
+        lightbox_13.classList.add('active');
+        document.body.style.overflow = 'hidden'
+
+})
+
+exit_13.addEventListener('click', e => {
+    lightbox_13.classList.remove('active');
+    document.body.style.overflow = 'scroll'
+})
+
 
