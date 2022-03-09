@@ -153,6 +153,55 @@ exit_9.addEventListener('click', e => {
     document.body.style.overflow = 'scroll'
 })
 
+//lightbox 10
 
+var lightbox_link_10 = document.getElementById('site10_link');
+var lightbox_10 = document.getElementById('site10_lightbox');
+var exit_10 = document.getElementById('exit_10');
+
+lightbox_link_10.addEventListener('click', e => {
+        lightbox_10.classList.add('active');
+        document.body.style.overflow = 'hidden'
+
+})
+
+exit_10.addEventListener('click', e => {
+    lightbox_10.classList.remove('active');
+    document.body.style.overflow = 'scroll'
+})
+
+//lightbox 11
+
+var lightbox_link_11 = document.getElementById('site11_link');
+var lightbox_11 = document.getElementById('site11_lightbox');
+var exit_11 = document.getElementById('exit_11');
+
+lightbox_link_11.addEventListener('click', e => {
+        lightbox_11.classList.add('active');
+        document.body.style.overflow = 'hidden'
+
+})
+
+exit_11.addEventListener('click', e => {
+    lightbox_11.classList.remove('active');
+    document.body.style.overflow = 'scroll'
+})
+
+//lightbox 12
+
+var lightbox_link_12 = document.getElementById('site12_link');
+var lightbox_12 = document.getElementById('site12_lightbox');
+var exit_12 = document.getElementById('exit_12');
+
+lightbox_link_12.addEventListener('click', e => {
+        lightbox_12.classList.add('active');
+        document.body.style.overflow = 'hidden'
+
+})
+
+exit_12.addEventListener('click', e => {
+    lightbox_12.classList.remove('active');
+    document.body.style.overflow = 'scroll'
+})
 
 

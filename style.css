@@ -1458,6 +1458,39 @@ header .nav-list ul {
           transform: scale(1.05);
 }
 
+.projets_section .projet .blur_background#spacers {
+  background-image: url("img/spacers/spacers.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projets_section .projet .blur_background#spacers.zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projets_section .projet .blur_background#arbres {
+  background-image: url("img/arbres/arbres.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projets_section .projet .blur_background#arbres.zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projets_section .projet .blur_background#santé {
+  background-image: url("img/santé/santé.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projets_section .projet .blur_background#santé.zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .projets_section .projet .description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2039,12 +2072,6 @@ footer {
 @media (min-width: 1200px) {
   footer {
     font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1900px) {
-  footer {
-    font-size: 2.5rem;
   }
 }
 

@@ -1007,6 +1007,30 @@ header{
                     transform: scale(1.05);
                 }
             }
+            &#spacers{
+                background-image: url("img/spacers/spacers.png");
+                background-size: cover;
+                background-position: center;
+                &.zoom{
+                    transform: scale(1.05);
+                }
+            }
+            &#arbres{
+                background-image: url("img/arbres/arbres.png");
+                background-size: cover;
+                background-position: center;
+                &.zoom{
+                    transform: scale(1.05);
+                }
+            }
+            &#santé{
+                background-image: url("img/santé/santé.png");
+                background-size: cover;
+                background-position: center;
+                &.zoom{
+                    transform: scale(1.05);
+                }
+            }
 
         }
         .description{
